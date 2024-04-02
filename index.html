@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Varela+Round&display=swap" rel="stylesheet">   
+    <title>Weekly Schedule Grid layout.</title>
+    <style>
+      body {
+        background-color: azure;
+      }
+
+      #top-section {
+        display: flex;
+      }
+
+      #top-section > img {
+        width: 380px;
+        height: 250px;
+        transform: rotate(110deg);
+        position: relative;
+        right: 100px;
+      }
+      
+      #top-section > p {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        color: #0B283E;
+        font-size: 80px;
+        margin: 0;
+        margin-top: 50px;
+        height: 140px;
+      }
+
+      #weeklyFlex {
+        display: flex;
+        justify-content: end;
+        margin-right: 108px;
+        gap: 14px;
+      }
+
+      .commonSize {
+        text-align: center;
+        width: 150px;
+        border-radius: 30px;
+        font-family: "Varela Round", sans-serif;
+        font-weight: bolder;
+        padding: 12px 15px;
+      }
+
+      .commonSize > p {
+        font-size: 20px;
+        font-weight: 900;
+        margin: 0;
+        color: #0B283E;
+      }
+
+      #grid {
+        width: 83%;
+        margin: auto;
+        margin-top: 13px;
+        margin-left: 157px;
+        display: grid;
+        grid-template-columns: repeat(6,180px);
+        grid-template-rows: repeat(9,auto);
+        gap: 15px;
+      }
+
+      .blue {
+        background-color: #BCEEF2;
+      }
+
+      .pink {
+        background-color: #FFD6EF;
+      }
+
+      .yellow {
+        background-color: #FAECAA;
+      }
+
+      #Bottom {
+        width: 1130px;
+        margin-top: 15px;
+        margin-left: 155px;
+        margin-bottom: 50px;
+        background-color: #BCEEF2;
+        border-radius: 30px;
+        padding:12px 15px;
+        font-family: "Varela Round", sans-serif;
+        font-weight: bolder;
+        text-align: left;
+      }
+
+      #Bottom > p {
+        font-size: 20px;
+        font-weight: 900;
+        margin: 0;
+        color: #0B283E;
+      }
+
+    </style>
+</head>
+<body>
+    <div id="root">
+
+        <!-- Top Section -->
+
+      <div id="top-section">
+         <img  src="https://clipart-library.com/images_k/rainbow-png-transparent/rainbow-png-transparent-23.png" alt="Rainbow">
+        <p>✨ Weekly schedule ✨</p>
+      </div>
+
+      <!-- weeks flex Section -->
+
+      <div id="weeklyFlex">
+        <!-- day1 -->
+        <div class="commonSize pink">
+            <p>Monday</p>
+        </div>
+         <!-- day2 -->
+         <div class="commonSize yellow">
+            <p>Tuesday</p>
+        </div>
+         <!-- day3 -->
+         <div class="commonSize pink">
+            <p>Wednesday</p>
+        </div>
+         <!-- day45 -->
+         <div class="commonSize yellow">
+            <p>Thursday</p>
+        </div>
+         <!-- day -->
+        <div class="commonSize pink">
+            <p>Friday</p>
+        </div>
+      </div>
+
+      <!-- Grid Section -->
+
+      <div id="grid">
+        <!-- grid cell -->
+        <div class="commonSize blue">
+            <p>08:00</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Maths</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>English</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Sanskrith</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Play Time</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Science</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize  blue">
+            <p>09:00</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Science</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Maths</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Play Time</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Sanskrith</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>English</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize blue">
+            <p>10:00</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Maths</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Sanskrith</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>English</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Science</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Play Time</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize blue">
+            <p>11:00</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>English</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Science</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Play Time</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Sanskrith</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Maths</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize blue">
+            <p>12:00</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Sanskrith</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Play Time</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>English</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Maths</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Science</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize blue">
+            <p>13:00</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p style="color: #15F5BA;">Lunch Time</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p style="color: #15F5BA;">Lunch Time</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p style="color: #15F5BA;">Lunch Time</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p style="color: #15F5BA;">Lunch Time</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p style="color: #15F5BA;">Lunch Time</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize blue">
+            <p>14:00</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Debate</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Debate</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Debate</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Debate</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Debate</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize blue">
+            <p>15:00</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Library</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Library</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Library</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Library</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Library</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize blue">
+            <p>16:00</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Yoga</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Yoga</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Yoga</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize yellow">
+            <p>Yoga</p>
+        </div>
+        <!-- grid cell -->
+        <div class="commonSize pink">
+            <p>Yoga</p>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+
+      <div id="Bottom">
+        <p>Note:    Follow your Yoga teacher's advise while doing Yoga. </p>
+      </div>
+      
+      <!-- Thank You. -->
+    </div>
+</body>
+</html>
